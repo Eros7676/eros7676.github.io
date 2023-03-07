@@ -138,3 +138,12 @@ function finish(d){
         setTimeout(() => {alert("EMPATE");}, 50);
     }
 }
+
+window.addEventListener('load', ()=>{
+    let alpha = 0.61919504643962848297213622291022;
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+    console.log(w, h);
+    setTimeout(() => {container.style.width = (w*0.3125) + "px";}, 50);
+    setTimeout(() => {container.style.height = (h*alpha) + "px";}, 50);
+})
