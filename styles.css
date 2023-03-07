@@ -1,7 +1,5 @@
 body {
     background-color: rgb(0, 119, 119);
-    margin:0;
-    padding: 0;
 }
 
 .grid-container {
@@ -9,8 +7,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 5px;
-    width: 600px;
-    height: 600px;
+    width: 1px;
+    height: 1px;
 
     margin: 0;
     position: absolute;
@@ -23,7 +21,7 @@ body {
 .grid-item {
     background-color: #f5f5f5;
     border: 2px solid #ddd;
-    font-size: 40px;
+    font-size: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
