@@ -156,12 +156,12 @@ function c() {
     container.style.marginTop = container.offsetTop; 
 }
 
-function down() {
-    container.style.marginTop = container.offsetTop + 1 + "px";
+function down(x) {
+    container.style.marginTop = container.offsetTop + x + "px";
     b();
 }
 
-function up() {
-    container.style.marginTop = container.offsetTop - 1 + "px";
+function up(x) {
+    container.style.marginTop = container.offsetTop - x + "px";
     b();
 }
