@@ -140,10 +140,32 @@ function finish(d){
 }
 
 window.addEventListener('load', ()=>{
-    let alpha = 0.61919504643962848297213622291022;
+    let alphaW = 0.3125;
+    let alphaH = 0.61919504643962848297213622291022;
     let w = window.innerWidth;
     let h = window.innerHeight;
+
+    let w2= w*alphaW;
+    let h2 = h*alphaH;
     console.log(w, h);
-    setTimeout(() => {container.style.width = (w*0.3125) + "px";}, 50);
-    setTimeout(() => {container.style.height = (h*alpha) + "px";}, 50);
+
+    /*setTimeout(() => {container.style.width = w2 + "px";}, 50);
+    setTimeout(() => {container.style.height = h2 + "px";}, 50);
+
+    container.style.top = (h + (h2 / 2)) + "px";*/
+
+    setTimeout(() => {console.log(container.offsetTop);}, 50);
+
+    if (w < h){
+        setTimeout(() => {container.style.width = w2 + "px";}, 50);
+        setTimeout(() => {container.style.height = w2 + "px";}, 50);
+    }
+    else {
+        setTimeout(() => {container.style.width = h2 + "px";}, 50);
+        setTimeout(() => {container.style.height = h2 + "px";}, 50);
+    }
+
+    cells.forEach(cell =>{
+        document.getElementById(cell.id).style.fontSize = w2 * 0.13333333 + "px";
+    })
 })
