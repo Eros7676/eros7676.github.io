@@ -11,8 +11,13 @@ body {
     gap: 5px;
     width: 300px;
     height: 300px;
-    margin:auto;
-    margin-top: 400px;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
   
 .grid-item {
