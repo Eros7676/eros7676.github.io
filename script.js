@@ -138,30 +138,3 @@ function finish(d){
         setTimeout(() => {alert("EMPATE");}, 50);
     }
 }
-
-function a() {
-    let alto = document.documentElement.scrollHeight;
-    let alpha = 1;
-    let r = alto/alpha;
-    console.log(alto + "px", r);
-    container.style.marginTop = (r - 21) + "px";
-    console.log(container.offsetTop);
-}
-
-function b() {
-    console.log(container.offsetTop);
-}
-
-function c() {
-    container.style.marginTop = container.offsetTop; 
-}
-
-function down(x) {
-    container.style.marginTop = container.offsetTop + x + "px";
-    b();
-}
-
-function up(x) {
-    container.style.marginTop = container.offsetTop - x + "px";
-    b();
-}
